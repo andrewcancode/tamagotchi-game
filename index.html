@@ -13,10 +13,35 @@
 </head>
 <body>
     <header>
-        <h1>
+        <p class="headP">
             Tamagotchi Game
-        </h1>
+            <input type="submit" value="Start Game" class="startGameBtn" />
+        </p>
     </header>
+    <div class="container">
+        <div class="topDiv">
+            <ul class="stats">
+                <li>
+                    Age: <span class="ageStat">0</span>
+                </li>
+                <li>
+                    Hunger: <span class="hungerStat">0</span>
+                </li>
+                <li>
+                    Sleepiness: <span class="sleepyStat">0</span>
+                </li>
+                <li>
+                    Boredom: <span class="boredomStat">0</span>
+                </li>
+            </ul>
+            <input type="submit" class="closeButton" value="x" />
+        </div>
+        <div class="actionsDiv">
+            <input type="submit" class="actionButton" id="feed" value="Feed" />
+            <input type="submit" class="actionButton" id="lights-off" value="Lights Off" />
+            <input type="submit" class="actionButton" id="play" value="Play" />
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
